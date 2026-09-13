@@ -18,4 +18,35 @@ create DB structure : npx prisma migrate dev --name init
 
 Generate prisma client: npx prisma generate
 
-Prisma Studio: npx prisma studio --url="file:///(<b>Your file directory</b>dev.db"
+Prisma Studio: npx prisma studio --url="file:///(<b>Your file directory</b>)dev.db"
+
+
+## Project Structure
+
+```text
+my-app/
+│
+├── app/
+│   ├── page.tsx
+│   └── ...
+│
+├── components/
+│   └── ...
+│
+├── lib/
+│   ├── prisma.ts
+│   └── ...
+│
+├── actions/
+│   ├── ...
+│
+├── generated/
+│   └── prisma/
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── auth.ts
+├── .env.local
+└── package.json
+```
