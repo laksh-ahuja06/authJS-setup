@@ -23,6 +23,7 @@ Prisma Studio: npx prisma studio --url="file:///(<b>Your file directory</b>dev.d
 
 ## Project Structure
 
+```text
 my-app/
 │
 ├── app/
@@ -48,3 +49,4 @@ my-app/
 ├── auth.ts
 ├── .env.local
 └── package.json
+```
