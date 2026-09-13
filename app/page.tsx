@@ -4,19 +4,34 @@ import Link from "next/link";
 export default async function SessionPage() {
 
   return (
-    <main>
-      <h1>Main Page: </h1>
+    <main className="max-w-2xl mx-auto p-6">
+      <h1 className="text-8xl font-bold mb-6">
+        Main Page
+      </h1>
 
-      {/*<h2>Welcome, {session.user?.name} </h2>*/}
-      <br></br>
+      <div className="border rounded-lg p-5">
+        <p className="mb-4">
+          Authenticate through GitHub: <Link
+            href="/api/auth/signin"
+            className="text-blue-600 hover:underline"
+          >
+            Authentication
+          </Link>
+        </p>
 
-      Authenticate through github: <Link href="/api/auth/signin">Authentication</Link>
 
-      <br></br>
-      <br></br>
 
-      Profile: <Link href = "/profile">Profile</Link>
+        <p className="mt-6">
+          Profile:
+          <Link
+            href="/profile"
+            className="text-blue-600 hover:underline"
+          >
+            Profile
+          </Link>
+        </p>
 
+      </div>
     </main>
   );
 }
