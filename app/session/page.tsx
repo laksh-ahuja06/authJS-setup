@@ -5,9 +5,7 @@ export default async function SessionPage() {
 
   return (
     <main>
-      <h1>Main Page: </h1>
-
-      <h2>Welcome, {session.user?.name} </h2>
+      <h1>Session</h1>
 
       <pre>
         {JSON.stringify(session, null, 2)}
